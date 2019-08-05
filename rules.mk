@@ -68,7 +68,7 @@ TGT_CFLAGS += $(ARCH_FLAGS)
 TGT_CFLAGS += -fno-common
 TGT_CFLAGS += -ffunction-sections -fdata-sections
 TGT_CFLAGS += -Wextra -Wshadow -Wno-unused-variable -Wimplicit-function-declaration
-TGT_CFLAGS += -Wredundant-decls -Wstrict-prototypes -Wmissing-prototypes
+TGT_CFLAGS += -Wredundant-decls -Wmissing-prototypes
 
 TGT_CXXFLAGS += $(OPT) $(CXXSTD) -ggdb3
 TGT_CXXFLAGS += $(ARCH_FLAGS)
@@ -171,4 +171,3 @@ clean:
 
 .PHONY: all clean flash
 -include $(OBJS:.o=.d)
-
